@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        input[type="email"] {
+            background-color: black;
+        }
+        input[type="password"] {
+            border: 1px solid  blue;
+        }
+    </style>
+</head>
+<body>
+    <!--Form-->
+    <h1>User Registratin form</h1>
+    <form>
+        <!--username field-->
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username"><br>
+        <br>
+        <!--email field-->
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your emailaddress"><br><br>
+
+        <!--Password-->
+        <label for="pasword">Password:</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required title="password must be atleast 8 characters long">
+    <br><br>
+    <label for="age">Age:</label><br><br>
+    <input type="number" id="age" name="age" placeholder="Enter your age" required title="age must be in years" min="18" max="30"><br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+</html>
+<!--username with requird field-->
+<!-- <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required><br>
+        <br> -->
